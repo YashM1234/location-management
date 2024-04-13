@@ -57,6 +57,7 @@ public class UserServiceImpl implements UserService{
             logger.info("Login successful");
         }
         logger.debug("Exiting Method Login");
+
         return result;
     }
 
