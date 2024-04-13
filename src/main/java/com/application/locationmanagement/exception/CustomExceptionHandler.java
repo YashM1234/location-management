@@ -21,9 +21,7 @@ public class CustomExceptionHandler {
         for(ErrorModel errorModel :be.getErrorList()) {
             logger.debug("Inside handelBusinessException: {}, {}", errorModel.getCode(), errorModel.getMessage());
         }
-        ResponseEntity<List<ErrorModel>> responseEntity
-                = new ResponseEntity<>(be.getErrorList(), HttpStatus.BAD_REQUEST);
-        return responseEntity;
+        return new ResponseEntity<>(be.getErrorList(), HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler(Exception.class)
@@ -38,8 +36,6 @@ public class CustomExceptionHandler {
         errorModelList.add(errorModel);
 
         logger.debug("Inside handelAllException: {}", errorModel.getMessage());
-        ResponseEntity<List<ErrorModel>> responseEntity
-                = new ResponseEntity<>(errorModelList, HttpStatus.INTERNAL_SERVER_ERROR);
-        return responseEntity;
+        return new ResponseEntity<>(errorModelList, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 }
