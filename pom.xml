@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.application</groupId>
-	<artifactId>location-management</artifactId>
+	<artifactId>location-management-user-auth</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>location-management</name>
-	<description> Location Management Application using with spring boot and data JPA</description>
+	<name>location-management-user-auth</name>
+	<description> Location Management User Auth Application using with spring boot and data JPA</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -31,11 +31,6 @@
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
@@ -49,6 +44,12 @@
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
 			<version>2.5.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.meanbean</groupId>
+			<artifactId>meanbean</artifactId>
+			<version>2.0.3</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 
