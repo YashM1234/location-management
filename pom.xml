@@ -12,7 +12,7 @@
 	<artifactId>location-management-user-auth</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>location-management-user-auth</name>
-	<description> Location Management User Auth Application using with spring boot and data JPA</description>
+	<description>Location Management User Auth Api using with spring boot and data JPA</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
