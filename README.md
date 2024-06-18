@@ -47,7 +47,10 @@ This microservice handles user authentication for the Location Management system
     mvn clean install
     mvn spring-boot:run
     ```
-    
+4. **Explore the API**
+    - Once running, access the Swagger UI to explore and test the API endpoints:
+      [http://localhost:80/swagger-ui.html](http://localhost:80/swagger-ui.html)
+      
 ## Note
 
 - Service run on port 80.
